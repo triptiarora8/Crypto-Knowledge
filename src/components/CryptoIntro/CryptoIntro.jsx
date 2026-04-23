@@ -1,4 +1,3 @@
-
 const CryptoIntro = () => {
   const features = [
     {
@@ -24,39 +23,52 @@ const CryptoIntro = () => {
     {
       Icon: "https://lwfiles.mycourse.app/686f7ba4ddeafe981e783e8d-public/4fa228404b16b43304f72b8609383500.png",
       text: "Lessons are crafted by experts who make complex topics accessible and fun",
-    }
+    },
   ];
 
   return (
-    <div className=" py-16 px-6 w-[90%] mx-auto">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
-
+    <div className="py-12 sm:py-16 px-4 sm:px-6 w-full lg:w-[90%] mx-auto">
+      
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+        
         {/* LEFT */}
         <div>
-          <h1 className="text-4xl font-bold text-slate-700 leading-tight mb-6">
+          {/* Heading */}
+          <h1 className="text-center lg:text-left font-bold text-slate-700 leading-tight mb-5
+            text-[2rem] 
+            sm:text-[2.5rem] 
+            md:text-[3rem] 
+            lg:text-[3.5rem]"
+          >
             New To Crypto? <br /> No Problem!
           </h1>
 
-          <p className="text-[#3A4854] text-[1.1rem] mb-6 leading-[1.2] opacity-[0.8]">
+          {/* Paragraph */}
+          <p className="text-[#3A4854] opacity-80 text-center lg:text-left leading-[1.5] mb-6
+            text-[0.95rem] 
+            sm:text-[1.05rem] 
+            md:text-[1.1rem]"
+          >
             The world is evolving fast. Don’t get left behind. Crypto is changing
             how money and value work. Those who learn today will be ready for tomorrow.
-            <br/>
-            <br/>
+            <br /><br />
             CryptoKnowledge is designed to help you learn:
           </p>
 
           {/* FEATURES */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {features.map((item, i) => (
-              <div key={i} className="flex flex-col items-start gap-3">
-
-                {/* Arrow Icon */}
-                <div className="mt-1">
-                  <img src={item.Icon} alt="icon" className="w-[3.125rem] h-[3.125rem]" />
-                </div>
+              <div key={i} className="flex items-center gap-3">
+                
+                {/* Icon */}
+                <img
+                  src={item.Icon}
+                  alt="icon"
+                  className="w-10 h-10 sm:w-12 sm:h-12 flex-shrink-0"
+                />
 
                 {/* Text */}
-                <p className="text-slate-700 text-[1rem] leading-[1.2]">
+                <p className="text-slate-700 text-sm sm:text-base leading-[1.4]">
                   {item.text}
                 </p>
               </div>
@@ -64,12 +76,13 @@ const CryptoIntro = () => {
           </div>
         </div>
 
-        {/* RIGHT */}
-        <div className="">
+        {/* RIGHT IMAGE */}
+        <div className="order-first lg:order-none">
           <img
-          src="https://lwfiles.mycourse.app/686f7ba4ddeafe981e783e8d-public/eb4c9508e2445a5fd671bb8ed63c8aa0.png"
-          alt="crypto"
-            className="rounded-[30px] w-full h-full object-cover"
+            src="https://lwfiles.mycourse.app/686f7ba4ddeafe981e783e8d-public/eb4c9508e2445a5fd671bb8ed63c8aa0.png"
+            alt="crypto"
+            className="rounded-[20px] sm:rounded-[30px] w-full h-full object-cover
+            max-h-[300px] sm:max-h-[400px] lg:max-h-[500px]"
           />
         </div>
 
