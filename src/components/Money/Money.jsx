@@ -9,7 +9,7 @@ const Money = () => {
       <a href="#courses" className="flex items-center gap-[0.5rem] px-2 py-1 lg:px-4 lg:py-2 rounded-full 
             hover:bg-[#3A4854] hover:text-white
              text-[#3A4854] border-2 border-[#3A4854]
-            transition-all duration-300 text-sm md:text-[1rem] lg:text-[1.375rem]">Enroll Now</a>
+            transition-all duration-300 text-sm md:text-[1rem]">Enroll Now</a>
       </div>
     </div>
   )

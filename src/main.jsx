@@ -9,7 +9,7 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
 <NavigationBar/>
     <App />
-    <div className='mt-50'>
+    <div className='md:mt-50 mt-50'>
     <FooterCTA/>
     </div>
   </StrictMode>,
